@@ -1,0 +1,491 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Messina Sans Trial';
+    src: url('MessinaSansTrial-Bold.otf') format('opentype');
+    font-style: normal;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Messina Sans Trial', 'Helvetica Neue', 'Nimbus Sans', 'Liberation Sans', 'DejaVu Sans', 'Fira Sans', 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.content {
+    background: linear-gradient(180deg, #010101 0%, #AEAEAE 100%); 
+}
+
+h1, p {
+    margin-bottom: 20px;
+}
+
+/* Banner Section */
+.banner {
+    width: 100%;
+    height: 56.25vw; /* 16:9 ratio */
+    background-image: url('banner_bg.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 88px;
+}
+
+/* For smaller screens, adjust background to 'contain' for better height usage */
+@media (max-width: 768px) {
+    .banner {
+        background-size: contain;
+    }
+}
+
+.banner-content {
+    color: white;
+    position: relative;
+}
+
+h1 {
+    width: 50%;
+    font-family: 'Messina Sans Trial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+h2 {
+    width: 100%;
+    margin-top: 24px;
+    font-family: 'Messina Sans Trial';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FEFEFE;
+    opacity: 0.8;
+}
+
+h3 {
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Messina Sans Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #EEE;
+    opacity: 0.8;
+}
+
+h4 {
+    width: 100%;
+    font-family: 'Messina Sans Trial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #9EFCDE;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+h4 a{
+    color: #9EFCDE;
+}
+
+h4 a:hover{
+    color: #FFBEF5;
+
+}
+
+.banner-buttons {
+    margin-top: 28%;
+}
+
+.banner-buttons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 260px;
+    height: 72px;
+    line-height: 72px;
+    font-size: 24px;
+    transition: all 0.5s ease;
+}
+
+.btn-left {
+    background: linear-gradient(270deg, #8AFAAB 0%, #A2FCE9 100%);
+    border-radius: 16px 0px 0px 16px;
+}
+
+.btn-left:hover {
+    background: linear-gradient(270deg, #A2FCE9 0%, #8AFAAB 100%);
+    border-radius: 16px 0px 0px 16px;
+    opacity: 0.8;
+}
+
+.btn-right {
+    background: linear-gradient(270deg, #E2FF7F 0%, #90FFA9 100%);
+    border-radius: 0px 16px 16px 0px;
+}
+
+.btn-right:hover {
+    background: linear-gradient(270deg, #90FFA9 0%, #E2FF7F 100%);
+    border-radius: 0px 16px 16px 0px;
+    opacity: 0.8;
+}
+
+img:hover {
+    opacity: 0.8;
+}
+
+img, a, .banner-buttons a, .section-btn a {
+    transition: all 0.3s ease-out;
+}
+
+.content {
+    margin-top: -1px;
+}
+
+/* Image Sections */
+.image-section {
+    margin: 0px auto;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+.section-btn {
+    margin-top: 20px;
+}
+
+.section-btn a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 260px;
+    height: 72px;
+    line-height: 72px;
+    font-size: 24px;
+    transition: all 0.5s ease;
+    font-family: 'Messina Sans Trial';
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+.dataset-btn a {
+    width: 468px;
+    margin-top: 100px;
+}
+
+.sp-btn a {
+    width: 620px;
+    margin-top: 80px;
+    border-radius: 16px;
+}
+
+.section-btn .btn-left {
+    background: linear-gradient(270deg, #8AFAAB 0%, #A2FCE9 100%);
+    border-radius: 16px;
+}
+
+.section-btn .btn-left:hover {
+    background: linear-gradient(270deg, #A2FCE9 0%, #8AFAAB 100%);
+    border-radius: 16px;
+}
+
+.section-btn .btn-right:hover {
+    background: linear-gradient(270deg, #90FFA9 0%, #E2FF7F 100%);
+    border-radius: 16px;
+}
+
+.section-btn a:hover {
+    background-position: right center; /* Change gradient direction */
+}
+
+/* Footer Section */
+.footer {
+    margin-top: 50px;
+    padding: 20px;
+    color: #ccc;
+}
+
+.footer img {
+    width: 600px;
+    margin-bottom: 120px;
+}
+
+.footer .contact {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    font-family: 'Messina Sans Trial';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 39px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.contact-info {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: 'Messina Sans Trial';
+    margin-top: 16px;
+}
+
+.contact-info a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #DDDDDD;
+}
+
+/* Responsive Design for various screen sizes */
+@media (max-width: 1440px) {
+    h1 {
+        font-size: 24px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 18px;
+    }
+
+    h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .banner-buttons a {
+        width: 240px;
+        height: 64px;
+        line-height: 64px;
+        font-size: 1.4em;
+    }
+
+    .image-section img {
+        max-width: 1000px;
+    }
+
+    .banner-buttons {
+    margin-top: 20%;
+}
+    .image-section {
+    padding: 80px 0;
+}
+
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 18px;
+        line-height: 36px;
+        width: 70%;
+        margin-top: 15px;
+    }
+
+    h2 {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 16px;
+    }
+
+    h3 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    .banner-buttons a {
+        width: 220px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 1.2em;
+    }
+
+    .image-section img {
+        max-width: 900px;
+    }
+
+       .banner-buttons {
+    margin-top: 16%;
+}
+    .image-section {
+    padding: 50px 0;
+}
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 16px;
+        line-height: 30px;
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 12px;
+    }
+
+    h3 {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 18px;
+    }
+
+    .banner {
+        height: auto;
+    }
+
+    .banner-buttons a {
+        width: 200px;
+        height: 56px;
+        line-height: 56px;
+        font-size: 0.9em;
+    }
+
+    .image-section img {
+        width: 90%;
+    }
+
+    .banner-buttons {
+        margin-top: 10%;
+    }
+
+    .footer img {
+        width: 400px;
+    }
+        .image-section {
+    padding: 30px 0;
+}
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 14px;
+        line-height: 28px;
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    h2 {
+        font-size: 10px;
+        line-height: 16px;
+        margin-top: 8px;
+    }
+
+    h3 {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    h4 {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+
+    .banner-buttons a {
+        width: 180px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 0.8em;
+    }
+
+    .image-section img {
+        width: 95%;
+    }
+
+    .footer img {
+        width: 300px;
+    }
+            .image-section {
+    padding: 20px 0;
+}
+}
+
+/* Responsive design for module buttons */
+@media (max-width: 768px) {
+    .section-btn a {
+        width: 200px;
+        height: 56px;
+        line-height: 56px;
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+
+    .dataset-btn a {
+        width: 350px;
+    }
+
+    .sp-btn a {
+        width: 400px;
+    }
+     .image-section {
+    padding: 20px 0;
+}
+}
+
+@media (max-width: 480px) {
+    .section-btn a {
+        width: 180px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 0.8em;
+        margin-top: 8px;
+    }
+
+    .dataset-btn a {
+        width: 300px;
+    }
+
+    .sp-btn a {
+        width: 320px;
+    }
+     .image-section {
+    padding: 20px 0;
+    }
+}
