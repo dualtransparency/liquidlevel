@@ -69,7 +69,7 @@ h1 {
 
 h2 {
     width: 100%;
-    margin-top: 24px;
+    margin-top: 20px;
     font-family: 'Messina Sans Trial';
     font-style: normal;
     font-weight: 300;
@@ -102,7 +102,7 @@ h4 {
     line-height: 120%;
     text-align: center;
     color: #9EFCDE;
-    margin-top: 20px;
+    margin-top: 16px;
     opacity: 0.8;
 }
 
@@ -299,7 +299,7 @@ img, a, .banner-buttons a, .section-btn a {
     }
 
     .banner-buttons {
-    margin-top: 20%;
+    margin-top: 24%;
 }
     .image-section {
     padding: 80px 0;
